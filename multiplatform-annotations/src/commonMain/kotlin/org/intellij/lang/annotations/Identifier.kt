@@ -13,19 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.intellij.lang.annotations
 
-sourceCompatibility = 1.9
-
-dependencies {
-    implementation project(':java-annotations')
-}
-
-compileJava {
-    // Without common sources, compiler complains that exported packages don't exist
-    source = [sourceSets.main.java, project(':java-annotations').sourceSets.main.java]
-}
-
-task mainJar(type: Jar) {
-}
-
-javadoc.enabled = false
+@Pattern("\\p{javaJavaIdentifierStart}\\p{javaJavaIdentifierPart}*")
+annotation class Identifier
