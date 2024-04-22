@@ -1,6 +1,11 @@
 Changelog
 ===
 
+Version 25.0.0
+---
+* Added Kotlin Multiplatform artifact (multiplatform-annotations).
+* Removed Java 5 artifact.
+
 Version 24.1.0
 ---
 * `@CheckReturnValue` is not experimental anymore.
